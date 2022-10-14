@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 115, in script
+    jump using_ai
+ScriptError: could not find label 'using_ai'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 115, in script
+    jump using_ai
+  File "C:\renpy-8.0.3-sdk\renpy\ast.py", line 1974, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\renpy-8.0.3-sdk\renpy\script.py", line 927, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'using_ai'.
+
+Windows-10-10.0.19041 AMD64
+Ren'Py 8.0.3.22090809
+AI Drawing 1.0
+Fri Oct 14 18:07:27 2022
