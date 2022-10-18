@@ -14,7 +14,7 @@ label start:
     mary "I'm sorry, but I'm looking for somebody a bit more brave and helpful. 
         Somebody who faces his fears head on and help somebody out."
     
-    show you emotionless at right
+    show you emoless at right
     menu:
         y "I..."
 
@@ -46,7 +46,7 @@ label at_night:
     scene bg night_street
     with fade
     show harold cry at left
-    show you emotionless at right
+    show you emoless at right
 
     y "Is everything okay?"
     h "I'm afraid not."
@@ -219,19 +219,23 @@ label good_ending:
     with fade
     "One day you are waling on the beach, and suddenly you see Mary."
     
-    show mary happy at left
+    show mary grin at left
     mary "Heyyyyyyy"
     mary "Is it true? Did you just help and stop Maud?"
     mary "Is everyone safe now?"
     show you happy at right
     y "Well...it does seem that way!"
+
+    show mary shy at left
     mary "I'm really sorry what I said before. I was just being selfish."
     mary "I'm really glad you helped Maud."
     mary "You are such a brave and helpful person!"
+    show mary grin at left
+    show you shy at right
     mary "You're my hero!"
 
-    hide mary happy
-    hide you happy
+    hide mary grin
+    hide you you shy
     show bg sunset_beach_kissing
     "YOU SAVED THE WORLD"
     "THE END"
@@ -248,8 +252,10 @@ label good_ending:
 
 
 label accept_truth:
+    hide you thinking
     show bg night_park2
     with fade
+    
 
     show you angry2 at right
     y "Well... that's the truth."
