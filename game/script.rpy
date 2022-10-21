@@ -15,11 +15,11 @@ label start:
     scene bg afternoon_beach
     with fade
 
-    "On a suuny day, you and Mary are out at a beach..."
+    "On a sunny day, you and Mary are out at a beach..."
 
     show mary angry at left
     mary "I'm sorry, but I'm looking for somebody a bit more brave and helpful. 
-        Somebody who faces his fears head on and help somebody out."
+        Somebody who faces his fears head-on and helps somebody out."
     
     show you emoless at right
     menu:
@@ -53,7 +53,7 @@ label at_night:
     scene bg night_street
     with fade
 
-    "You are walking on the street after dinner and saw your firend Harold"
+    "You are walking on the street after dinner and see your friend, Harold"
 
     show harold cry at left
     show you emoless at right
@@ -82,11 +82,11 @@ label at_ninght_do_nothing:
     show harold angry at left
 
     h "You are such a coward!"
-    h "Did you remember what Mary said to you?"
+    h "Do you remember what Mary said to you?"
     
     hide harold angry
     show you thinking at right
-    "Mary...Right, she likes people that are brave..."
+    "Mary...Right, she likes brave people..."
 
     show you happy at right
     y "You are right. We've got to do something."
@@ -99,15 +99,15 @@ label at_night_final:
     h "Yes, I agree."
 
     show harold defau at left
-    h "but I don't know where to start."
+    h "But I don't know where to start."
     show you thinking at right
-    y "You can start by teling me where it happened"
+    y "You can start by telling me where it happened"
 
     show harold cry2 at left
     h "I'm not sure I want to go back there."
     y "Come on, we've got to do something."
-    y "where did it happen?"
-    h "It was in the park! Thats where I saw it!"
+    y "Where did it happen?"
+    h "It was in the park! That's where I saw it!"
     y "Let's go there!"
 
     play music "<from 4>audio/Two Steps From Hell,Thomas Bergersen - El Dorado (Dubstep Remix).mp3"
@@ -125,15 +125,15 @@ label at_park:
     maud "Haha, who else can I eat"
     hide maud
 
-    "You, closely followed by Harold, rushes towards Maud, but suddenly stops in her tracks."
+    "You, closely followed by Harold, rushes towards Maud but suddenly stop in her tracks."
 
     show harold angry at left
     h "What is it? What's wrong?"
     show you shocked at right
-    y "That's not just any crazy perosn, that's Maud Pitt!"
+    y "That's not just any crazy person. That's Maud Pitt!"
     h "Who's Maud Pitt?"
-    y "Who's Maud Pitt? Who's Maud Pitt? The most evil person in the world!"
-    h "We're going to need some help if we're going to stop the most evil perosn in the universe!"
+    y "Who's Maud Pitt? Who's Maud Pitt? The evilest person in the world!"
+    h "We're going to need some help if we're going to stop the evilest person in the universe!"
     
     hide harold angry
     show maud crazy at left
@@ -142,7 +142,7 @@ label at_park:
     show harold shocked at left
     h "You've met?"
     show you emoless at right
-    y "Yes, it was a long, long tiem ago."
+    y "Yes, it was a long, long time ago."
     y "He's a game enthusiast..."
 
     hide maud crazy
@@ -162,7 +162,7 @@ label back_in_time:
     y "You should really try and attend some drawing lessons"
     maud "I don't have the money and time for that"
     maud "I wish I could draw when I was born..."
-    maud "I tried to learn by my own, but it doesn't work"
+    maud "I tried to learn on my own, but it doesn't work"
     maud "I tried really hard. But I just can't draw... I can't draw!!!"
     maud "WHYYYYYYY"
     hide maud young
@@ -196,14 +196,14 @@ label using_ai:
 
     show you happy at right
     y "You may have failed back them, but you won't right now!"
-    y "You can fulfill your dream now, with AI!"
+    y "You can fulfill your dream now with AI!"
     y "You can use AI to draw for you!"
     show maud crazy at left
     maud "AI? Haugh, I don't believe in that!"
     maud "The drawing must be weird and crappy!"
     y "No, it's not!"
     y "I've seen it myself!"
-    y "You should defininately try it!"
+    y "You should definitely try it!"
     y "Let me show you!"
 
     jump showing_ai_demo
@@ -221,7 +221,7 @@ label showing_ai_demo:
     show maud happy at left
     maud "Holy... I can't believe this! I think I can make my own game now!"
     y "Absolutely can! Let's calm down, get home, and make your game!"
-    maud "that's a great idea!"
+    maud "That's a great idea!"
     y "Let's go!"
 
     hide maud happy
@@ -233,7 +233,7 @@ label good_ending:
     play music "audio/Jeremy Kim - happy digital anthem.mp3"
     show bg sunset_beach
     with fade
-    "One day you are waling on the beach, and suddenly you see Mary."
+    "One day you are walking on the beach, and suddenly you see Mary."
     
     show mary grin at left
     mary "Heyyyyyyy"
@@ -243,7 +243,7 @@ label good_ending:
     y "Well...it does seem that way!"
 
     show mary shy at left
-    mary "I'm really sorry what I said before. I was just being selfish."
+    mary "I'm really sorry for what I said before. I was just being selfish."
     mary "I'm really glad you helped Maud."
     mary "You are such a brave and helpful person!"
     show mary grin at left
@@ -291,7 +291,7 @@ label accept_truth:
 
     hide you angry2
     "MAUD WENT CRAZY AND ATE YOU"
-    "YOU DIED AND THE WORLD IS IN DANGER"
+    "YOU DIED, AND THE WORLD IS IN DANGER"
     "THE END"
     hide maud crazy
     stop sound
@@ -311,9 +311,9 @@ label ai_drawing_discussion_start:
     play music "<from 30>audio/limitless.mp3"
     show bg bedroom
     with fade
-    "After knwoing AI Drawing, Maud began to made his game."
+    "After knowing AI Drawing, Maud began to make his game."
     "However, Maud found some problems..."
-    "Look at problems Maud encountered:"
+    "Look at the problems Maud encountered:"
     menu:
         "Barriers of using":
             jump difficult_to_use
@@ -331,7 +331,7 @@ label difficult_to_use:
     maud "I need to read through pages and pages of manuals to use it properly!"
     maud "That's horrible..."
     hide maud_serious
-    "When Maud can finally being able to start and use it..."
+    "When Maud can finally be able to start and use it..."
     show maud_sad at left
     maud "Oh no..."
     maud "I still need to remember all the commands and keywords..."
@@ -359,16 +359,16 @@ label poor_drawing_quality:
     show maud_happy at left
     maud "Finally... I can start to draw my own picture!"
     maud "Let me start by drawing one person jumping on the street happily!"
-    "Maud typed in \"one person happily jumping on the street in the morning\""
+    "Maud typed in: \"one person happily jumping on the street in the morning\" as the command."
     hide maud_happy
     "Around 20 seconds later..."
     show maud_sad at left
     show bg bad_quality1
     maud "Why my picture quality is so bad?"
-    maud "The person is there stories tall!"
+    maud "The person is three stories tall with fingers being cut off!"
     maud "The face is so ugly!"
     show bg bad_quality2
-    maud "And the the picture is so blurry... I can barely use it for my visual novel!"
+    maud "And the picture is so blurry... I can barely use it for my visual novel!"
 
     "Maud is at the edge of getting crazy again..."
     hide maud_sad
@@ -393,17 +393,16 @@ label no_copyright:
     maud "Finally... I finished drawing all my pictures via AI!"
     hide maud_happy
     "Maud's game is ready to be published..."
-    "However, Maud start to find controversies around AI Drawings..."
+    "However, Maud starts to find controversies around AI Drawings..."
     show maud_serious at left
     maud "Oh no..."
     show bg protest1 with fade
-    maud "There are people protesting against AI Drawings because they think AI is stealing their work"
+    maud "People are protesting against AI Drawings because they think AI is stealing their work"
     show bg protest2
-    maud "people says AI drawings are trained based on other people's drawings without seeking for
-    authorization before using them..."
+    maud "People say AI drawings are trained based on other people's drawings without seeking authorization before using them..."
     maud "Should I use them in my game?"
     hide maud_serious
-    "Unfortunately, no one can ansewer Maud's question at this moment as there are still a lot 
+    "Unfortunately, no one can answer Maud's question at this moment as there are still a lot 
     of controversies around this issue"
     "Maud is at the edge of getting crazy again..."
 
@@ -424,14 +423,14 @@ label quit:
     play music "audio/end_music.mp3" fadein 1.0
     show bg forest1
     with fade
-    "Some of my last thoughts..."
-    "Sorry for the dump plot, maybe poor choice of music, and any errors you've encountered. This is my first time making a visual novel."
-    "What happened to Maud is what I encountered when I create this game."
-    "But it made me realized how fast AI is evolving -- AI paintings are not usable at all when I'm doing my project 1..."
+    "My last thoughts:"
+    "Sorry for the dumb plot and any errors you've encountered. This is my first time making a visual novel."
+    "What happened to Maud is what I encountered when I created this game."
+    "But it made me realize how fast AI is evolving -- AI paintings are not usable at all when I'm doing my project 1..."
     show bg forest2
     with fade
-    "And let's not forget is that the need of visual novels made AI drawing avaliable, it is games that made the world inventing innovative things; games are reshaping the world!"
-    "There are certainly many problems with AI Drawing, but I still think it is a good tool to help, especially for those like me who is poor at drawing"
+    "And let's not forget that it is the need for visual novels that made AI drawing available. Games made the world invent innovative things; games are reshaping the world!"
+    "There are undoubtedly many problems with AI Drawing, but I still think it is  an excellent tool to help, especially for those like me who are poor at drawing"
     show bg city_night2
     "Thank you for watching"
     return
@@ -454,11 +453,11 @@ label benefits_start:
 label revolute:
     show bg office
     with fade
-    "Drawing used to be a labor intensive job in the past -- you need to draw every single picture by yourself which is time consuming and expensive."
-    "Also, drawing skills might have stopped many enthusiasts from creating their own visual novel (like maud)."
+    "Drawing used to be a labor-intensive job in the past -- you need to draw every single picture by yourself, which is time-consuming and expensive."
+    "Also, drawing skills might have stopped many enthusiasts from creating their own visual novels (like maud)."
     show bg cyberpunk
-    "With this new technology, theoretically, in the future, anyone with a plot in their minds can create their own visual novel without drawing skills."
-    "Meanwhile, drawers can use AI to increase their drawing speed as well as providing inspirations."
+    "With this new technology, theoretically, in the future, anyone with a plot in their mind can create their own visual novel without drawing skills."
+    "Meanwhile, drawers can use AI to increase their drawing speed as well as provide inspiration."
 
     "See other benefits of AI Drawing:"
     menu:
@@ -476,10 +475,10 @@ label various_usage:
     with fade
 
     "AI Drawing can be used in many other aspects, other than creating a visual novel for entertainment (although it is why AI drawing is created)."
-    "As it is proven that more interative or less rigid ways of learning can help people learn better, AI drawings can help."
+    "As it is proven that more interactive or less rigid ways of learning can help people learn better, AI drawings can help."
     show bg classroom_happy1 with fade
-    "Teachers can instead of using boring slides that shows white backgournd and black print, but use AI drawings to enhance their presentations."
-    "Moreover, teachers potentially can transfer their contents in to a story and use AI drawings to create a visual novel to help students learn better."
+    "Teachers can, instead of using boring slides that show white background and black print, use AI drawings to enhance their presentations."
+    "Moreover, teachers can potentially transfer their contents into a story and use AI drawings to create a visual novel to help students learn better."
     show bg classroom_happy2 with fade
     "Students, on the other hand, can use AI drawings to create their projects, for example, creating a game to demonstrate their knowledge, which will make projects more fun to make. 
     (AI coding is also potentially a very good tool to help students and teachers to build their games/novels, but that's another story.)"
