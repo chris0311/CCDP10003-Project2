@@ -1,22 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 19, in script
-    you "I..."
-Exception: Sayer 'you' is not defined.
+  File "game/script.rpy", line 307, in script
+    jump ai_drawing_disscussion_start
+ScriptError: could not find label 'ai_drawing_disscussion_start'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 19, in script
-    you "I..."
-  File "C:\renpy-8.0.3-sdk\renpy\ast.py", line 881, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\renpy-8.0.3-sdk\renpy\ast.py", line 774, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'you' is not defined.
+  File "game/script.rpy", line 307, in script
+    jump ai_drawing_disscussion_start
+  File "C:\renpy-8.0.3-sdk\renpy\ast.py", line 1974, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\renpy-8.0.3-sdk\renpy\script.py", line 927, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'ai_drawing_disscussion_start'.
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.0.3.22090809
-AI Drawing Eng 1.0
-Mon Oct 17 19:33:40 2022
+Brutal Maud 1.0
+Fri Oct 21 18:04:27 2022
